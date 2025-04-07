@@ -18,7 +18,7 @@ function KakaoCallback() {
                 'Content-Type': 'application/json',
             },
             credentials: 'include', // ⭐ 추가
-            body: JSON.stringify({ code: code }),
+            body: JSON.stringify({ code }),  // ✅ 이게 맞는 형식
         })
             .then((res) => res.json())
             .then((data) => {
