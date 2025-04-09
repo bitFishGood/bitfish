@@ -1,9 +1,9 @@
 import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import KakaoLogin from './KakaoLogin';
-import KakaoCallback from './KakaoCallback';
+import KakaoLogin from './api/KakaoLogin';
+import KakaoCallback from './api/KakaoCallback';
 
 function App() {
   return (
