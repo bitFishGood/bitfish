@@ -1,12 +1,6 @@
 import React from 'react';
+import '../styles/App.css'; // App.css 꼭 불러와야 함
 
-// OceanBackground.jsx
 export default function OceanBackground() {
-    return (
-        <img
-            src="/assets/images/바다배경.png"
-            alt="ocean"
-            className="absolute inset-0 w-full h-full object-cover z-0"
-        />
-    );
+    return <div className="ocean-background" />;
 }

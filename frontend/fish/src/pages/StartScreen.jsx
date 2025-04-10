@@ -6,7 +6,7 @@ import KakaoLogin from "../api/KakaoLogin";
 
 export default function StartScreen() {
     return (
-        <div className="relative w-screen h-screen overflow-hidden font-sans">
+        <div className="relative w-[1000px] h-[700px] overflow-hidden font-sans mx-auto my-auto shadow-2xl rounded-xl bg-transparent">
             {/* 배경 이미지 */}
             <OceanBackground />
 
@@ -20,12 +20,14 @@ export default function StartScreen() {
                     시작하러가기
                 </button>
             </div>
-            <KakaoLogin></KakaoLogin>
+
+            {/* 카카오 로그인 */}
+            <KakaoLogin />
 
             {/* 물고기 */}
-            <Fish position={{ bottom: "6rem", left: "2rem" }} delay={0} />
-            <Fish position={{ bottom: "8rem", left: "6rem" }} delay={150} />
-            <Fish position={{ bottom: "10rem", left: "10rem" }} delay={300} />
+            <Fish position={{ top: "100px", left: "30px" }} delay={0} type="left" />
+            <Fish position={{ top: "180px", left: "120px" }} delay={400} type="right" />
+            <Fish position={{ top: "260px", left: "220px" }} delay={800} type="left" />
 
             {/* 바닥 장식 */}
             <Coral />
